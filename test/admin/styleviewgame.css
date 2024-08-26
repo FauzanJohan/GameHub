@@ -1,0 +1,117 @@
+/* styleviewgame.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #242527; /* Dark gray background */
+    color: #fff; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #343a40; /* Dark background color */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.game-section {
+    background-color: #fff; /* White background color */
+    border: 1px solid #dee2e6; /* Light gray border */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Adjusted width for three games in a row */
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    transition: transform 0.2s ease-in-out; /* Add smooth transition effect */
+}
+
+.game-section:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.game-section img {
+    height: 300px; /* Adjust the height as needed */
+    width: 300px; /* Adjust the width as needed */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.game-section h3 {
+    color: #343a40; /* Dark text color */
+}
+
+.game-section p {
+    margin-bottom: 8px;
+    color: #6c757d; /* Gray text color */
+}
+
+.game-section a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #1e1b1b; /* White text color */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Modify the styles for Update and Delete buttons */
+/* Add/update the styles for Update and Delete buttons */
+.game-section .actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.game-section .actions a {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.game-section .actions a.update {
+    background-color: #28a745; /* Green background for Update button */
+    color: #fff; /* White text color */
+}
+
+.game-section .actions a.delete {
+    background-color: #dc3545; /* Red background for Delete button */
+    color: #fff; /* White text color */
+}
+
+/* Adjust the Add Game link style */
+#add-game a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff; /* Blue */
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#add-game a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Clearfix to handle float clearing */
+.clear {
+    clear: both;
+}
